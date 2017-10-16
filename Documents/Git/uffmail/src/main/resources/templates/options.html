@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <form action="#" th:action="@{/}" th:object="${personForm}" method="post">
+            <table>
+				<tr>
+                    <td><p th:text="${personForm.name} + ', Selecione um dos e mails abaixo.'" /> </td>
+				</tr>
+				<tr>
+                    <td><p th:text="${personForm.emails}" /> </td>
+				</tr>
+                <tr>
+                    <td><button type="submit" >Submit</button></td>
+                </tr>
+            </table>
+        </form>
+		
+    </body>
+</html>

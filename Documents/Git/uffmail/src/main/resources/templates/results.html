@@ -1,0 +1,8 @@
+<html>
+	<body>
+		<form action="#" th:action="@{/}" th:object="${personForm}" method="post">
+			<p th:text=" ' A criação de seu e-mail(' + ${personForm.email} + ')  será feito nos próximos minutos.
+				Um SMS foi enviado para ' + ${personForm.tel} + ' com a sua senha de acesso.'" />
+		</form>
+	</body>
+</html>

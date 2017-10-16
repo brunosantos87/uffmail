@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <form action="#" th:action="@{/}" th:object="${personForm}" method="post">
+            <table>
+				<tr>
+                    <td>Matricula:</td>
+                    <td><input type="text" th:field="*{id}" /></td>
+				</tr>
+                <tr>
+                    <td><button type="submit">Submit</button></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
